@@ -34,8 +34,49 @@ a {
   height: 1rem;
 }
 
+.page {
+  background: rgb(229, 226, 226);
+  padding: 1rem;
+}
+.page .title {
+  font-size: 1.3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.7rem;
+}
+
+.categories {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 0;
+  gap: 0.6rem;
+}
+.categories li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8em;
+  padding: 0.3rem 1rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 1px rgba(185, 183, 183, 0.82);
+}
+.categories li img {
+  width: 30%;
+}
+.categories li:hover {
+  box-shadow: 0px 1px 1px 1px rgba(134, 133, 133, 0.82);
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 :root {
   box-sizing: border-box;
+  font-family: "roboto", sans-serif;
 }
 
 body {
