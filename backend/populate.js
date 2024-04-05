@@ -303,7 +303,7 @@ const phoneArray = [
     price: 999,
     description:
       "Samsung's latest flagship phone with cutting-edge features and stunning design.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Apple iPhone 13",
@@ -311,7 +311,7 @@ const phoneArray = [
     price: 1099,
     description:
       "The newest iPhone featuring the powerful A15 Bionic chip and advanced camera system.",
-    category: "Apple",
+    category: "apple",
   },
   {
     name: "Xiaomi Mi 12",
@@ -319,7 +319,7 @@ const phoneArray = [
     price: 799,
     description:
       "Xiaomi's latest flagship phone with a powerful Snapdragon processor and stunning display.",
-    category: "Xiaomi",
+    category: "xiaomi",
   },
   {
     name: "Samsung Galaxy Note 20",
@@ -327,7 +327,7 @@ const phoneArray = [
     price: 899,
     description:
       "Samsung's premium phablet with an immersive display and versatile S Pen functionality.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Apple iPhone 13 Pro",
@@ -335,7 +335,7 @@ const phoneArray = [
     price: 1199,
     description:
       "The ultimate iPhone for professionals with ProMotion display and Pro camera system.",
-    category: "Apple",
+    category: "apple",
   },
   {
     name: "Xiaomi Mi 11",
@@ -343,7 +343,7 @@ const phoneArray = [
     price: 699,
     description:
       "Xiaomi's flagship phone offering top-tier performance and elegant design.",
-    category: "Xiaomi",
+    category: "xiaomi",
   },
   {
     name: "Samsung Galaxy Z Flip 3",
@@ -351,7 +351,7 @@ const phoneArray = [
     price: 999,
     description:
       "Samsung's foldable phone with a compact design and innovative Flex mode.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Apple iPhone SE",
@@ -359,7 +359,7 @@ const phoneArray = [
     price: 499,
     description:
       "The compact iPhone with the powerful A15 Bionic chip and advanced camera features.",
-    category: "Apple",
+    category: "apple",
   },
   {
     name: "Xiaomi Redmi Note 11 Pro",
@@ -367,7 +367,7 @@ const phoneArray = [
     price: 499,
     description:
       "Xiaomi's mid-range phone with a high-refresh-rate display and impressive camera capabilities.",
-    category: "Xiaomi",
+    category: "xiaomi",
   },
   {
     name: "Samsung Galaxy A52",
@@ -375,7 +375,7 @@ const phoneArray = [
     price: 499,
     description:
       "Samsung's mid-range phone with a versatile camera system and long-lasting battery.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Apple iPhone 12 Mini",
@@ -383,7 +383,7 @@ const phoneArray = [
     price: 699,
     description:
       "The compact iPhone with a Super Retina XDR display and 5G connectivity.",
-    category: "Apple",
+    category: "apple",
   },
   {
     name: "Xiaomi Redmi Note 10",
@@ -391,7 +391,7 @@ const phoneArray = [
     price: 299,
     description:
       "Xiaomi's budget-friendly phone with a high-resolution display and powerful battery.",
-    category: "Xiaomi",
+    category: "xiaomi",
   },
   {
     name: "Samsung Galaxy A32",
@@ -399,7 +399,7 @@ const phoneArray = [
     price: 349,
     description:
       "Samsung's affordable phone with a large Infinity-U display and quad-camera setup.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Apple iPhone 12 Pro Max",
@@ -407,7 +407,7 @@ const phoneArray = [
     price: 1099,
     description:
       "The largest iPhone with a Pro camera system and LiDAR scanner for advanced AR experiences.",
-    category: "Apple",
+    category: "apple",
   },
   {
     name: "Xiaomi Redmi note 13",
@@ -415,7 +415,7 @@ const phoneArray = [
     price: 199,
     description:
       "Xiaomi's entry-level phone with a large display and AI quad-camera setup.",
-    category: "Xiaomi",
+    category: "xiaomi",
   },
   {
     name: "Samsung Galaxy S20 FE",
@@ -423,7 +423,7 @@ const phoneArray = [
     price: 699,
     description:
       "Samsung's flagship experience at an affordable price, featuring a Super AMOLED display and versatile camera system.",
-    category: "Samsung",
+    category: "samsung",
   },
 ];
 const tvArray = [
@@ -433,7 +433,7 @@ const tvArray = [
     price: 1999,
     description:
       "Experience stunning picture quality with the LG OLED C1. Featuring OLED technology, Dolby Vision IQ, and AI-enhanced image processing, it delivers unparalleled visuals.",
-    category: "LG",
+    category: "lg",
   },
   {
     name: "Samsung QLED QN90A",
@@ -441,7 +441,7 @@ const tvArray = [
     price: 2499,
     description:
       "Immerse yourself in lifelike colors and incredible detail with the Samsung QLED QN90A. With Quantum HDR, Object Tracking Sound, and a sleek design, it's a true centerpiece for any room.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Sony Bravia XR A90J",
@@ -449,7 +449,7 @@ const tvArray = [
     price: 2999,
     description:
       "Experience cinematic brilliance with the Sony Bravia XR A90J. Featuring Cognitive Processor XR, XR Triluminos Pro, and Acoustic Surface Audio+, it's the ultimate entertainment experience.",
-    category: "Sony",
+    category: "sony",
   },
   {
     name: "LG NanoCell 90",
@@ -457,7 +457,7 @@ const tvArray = [
     price: 1499,
     description:
       "Enjoy vibrant colors and sharp detail with the LG NanoCell 90. With NanoCell technology, Dolby Atmos, and a sleek design, it's perfect for both movies and gaming.",
-    category: "LG",
+    category: "lg",
   },
   {
     name: "Samsung Neo QLED QN85A",
@@ -465,7 +465,7 @@ const tvArray = [
     price: 1999,
     description:
       "Elevate your viewing experience with the Samsung Neo QLED QN85A. Featuring Quantum Matrix Technology, Object Tracking Sound, and Adaptive Picture, it delivers stunning visuals and immersive audio.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Sony Bravia X90J",
@@ -473,7 +473,7 @@ const tvArray = [
     price: 1799,
     description:
       "Enjoy breathtaking clarity and detail with the Sony Bravia X90J. With Full Array LED, XR Triluminos Pro, and XR Motion Clarity, it delivers an immersive viewing experience.",
-    category: "Sony",
+    category: "sony",
   },
   {
     name: "LG OLED GX",
@@ -481,7 +481,7 @@ const tvArray = [
     price: 2999,
     description:
       "Transform your living space with the LG OLED GX. With Gallery Design, Dolby Vision IQ, and Alpha 9 Gen 3 AI Processor, it's a work of art that delivers exceptional picture quality.",
-    category: "LG",
+    category: "lg",
   },
   {
     name: "Samsung The Frame",
@@ -489,7 +489,7 @@ const tvArray = [
     price: 1799,
     description:
       "Elevate your space with the Samsung The Frame. When not in use, it transforms into a stunning piece of art, and when turned on, it delivers vibrant colors and lifelike detail.",
-    category: "Samsung",
+    category: "samsung",
   },
   {
     name: "Sony Bravia X80J",
@@ -497,7 +497,7 @@ const tvArray = [
     price: 1199,
     description:
       "Enjoy immersive entertainment with the Sony Bravia X80J. With 4K HDR, Triluminos Display, and Google TV, it offers stunning visuals and easy access to your favorite content.",
-    category: "Sony",
+    category: "sony",
   },
   {
     name: "LG 4K UHD UN7070",
@@ -505,7 +505,7 @@ const tvArray = [
     price: 899,
     description:
       "Experience lifelike visuals with the LG 4K UHD UN7070. With 4K Active HDR, webOS, and a slim design, it's the perfect addition to any entertainment setup.",
-    category: "LG",
+    category: "lg",
   },
   {
     name: "Samsung Crystal UHD AU8000",
@@ -513,7 +513,7 @@ const tvArray = [
     price: 999,
     description:
       "Immerse yourself in stunning clarity with the Samsung Crystal UHD AU8000. With Crystal Processor 4K, HDR, and Motion Xcelerator, it delivers an incredible viewing experience.",
-    category: "Samsung",
+    category: "samsung",
   },
 ];
 module.exports = { appliancesArray, itArray, phoneArray, tvArray };

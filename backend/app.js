@@ -2,10 +2,6 @@ require("dotenv").config();
 require("express-async-errors");
 const cors = require("cors");
 
-const { Phone, Tv } = require("./models/Item");
-
-const { phoneArray, tvArray } = require("./populate");
-
 const multer = require("multer");
 const express = require("express");
 const path = require("path");
@@ -53,8 +49,6 @@ app.use(errorHandlerMiddleware);
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
-    await Phone.create(phoneArray);
-    await Tv.create(tvArray);
     app.listen(3000, () => console.log(`Server is listening on port 3000...`));
   } catch (error) {
     console.log(error);
