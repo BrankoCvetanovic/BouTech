@@ -23,7 +23,7 @@ export default function Header() {
         </IconButton>
       </div>
       <div className="nav">
-        <NavLink className="home" to="/dw">
+        <NavLink className="home" to="/">
           <HomeOutlinedIcon fontSize="small" sx={{ height: "1.1rem" }} />
         </NavLink>
         <NavLink to="/appliances">Appliances</NavLink>
