@@ -1,5 +1,5 @@
 import Categories from "../components/Categories";
-import { appliances } from "../util/categories";
+import { phones } from "../util/categories";
 import axios, { AxiosError } from "axios";
 import {
   useLoaderData,
@@ -14,11 +14,12 @@ import { useState } from "react";
 import Sort from "../components/Sort";
 import { loadedData } from "../util/types";
 
-export default function AppliancesPage() {
+export default function PhonesPage() {
   const data = useLoaderData() as loadedData;
-  const [searchParams, setSearchParams] = useSearchParams();
 
-  const [value, setValue] = useState<number[]>([1, 1000]);
+  const [value, setValue] = useState<number[]>([198, 1200]);
+
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const navigation = useNavigation();
 
@@ -43,16 +44,16 @@ export default function AppliancesPage() {
   };
   return (
     <div className="page">
-      <div className="title">Appliances</div>
-      <Categories categories={appliances} />
+      <div className="title">Phones</div>
+      <Categories categories={phones} />
       <div className="bar">
         <div className="slider">
           <div>Price:</div>
           <Slider
             getAriaLabel={() => "Price range"}
             valueLabelDisplay="auto"
-            min={1}
-            max={1000}
+            min={198}
+            max={1200}
             onChange={handleChange}
             onChangeCommitted={handleChangeCommited}
             value={value}
@@ -93,9 +94,9 @@ export default function AppliancesPage() {
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const sortBy = new URL(request.url).searchParams.toString();
 
-  let searchUrl = "http://localhost:3000/appliances";
+  let searchUrl = "http://localhost:3000/phones";
   if (sortBy) {
-    searchUrl = `http://localhost:3000/appliances?${sortBy}`;
+    searchUrl = `http://localhost:3000/phones?${sortBy}`;
   }
   try {
     const response = await axios.get(searchUrl);

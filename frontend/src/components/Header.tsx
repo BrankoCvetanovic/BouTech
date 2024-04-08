@@ -27,7 +27,7 @@ export default function Header() {
           <HomeOutlinedIcon fontSize="small" sx={{ height: "1.1rem" }} />
         </NavLink>
         <NavLink to="/appliances">Appliances</NavLink>
-        <NavLink to="/tv">TV</NavLink>
+        <NavLink to="/tvs">TV</NavLink>
         <NavLink to="/it">IT</NavLink>
         <NavLink to="/phones">Phones</NavLink>
       </div>

@@ -16,14 +16,8 @@ async function getTvs(req, res) {
   if (sort) {
     sortValue = sort;
   }
-  const limit = 15;
-  const page = Number(req.query.page) || 1;
-  const skip = (page - 1) * limit;
 
-  const items = await Tv.find(queryObject)
-    .sort(sortValue)
-    .limit(limit)
-    .skip(skip);
+  const items = await Tv.find(queryObject).sort(sortValue);
   res.status(StatusCodes.OK).json({ items, count: items.length });
 }
 
