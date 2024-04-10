@@ -1,3 +1,10 @@
+import Slider from "../components/Slider";
+
 export default function HomePage() {
-  return <h1>Home Page!!</h1>;
+  return (
+    <div className="home-page">
+      <Slider />
+      <div className="title">Recomended</div>
+    </div>
+  );
 }
