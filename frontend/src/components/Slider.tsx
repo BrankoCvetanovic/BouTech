@@ -4,7 +4,7 @@ import adIcon2 from "../assets/webp_0408_TopDealsSH.webp";
 import adIcon3 from "../assets/1920x660_sm@2x.jpg";
 
 export default function Slider() {
-  const [images, setImages] = useState([adIcon1, adIcon2]);
+  const [images, setImages] = useState([adIcon1, adIcon2, adIcon3]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

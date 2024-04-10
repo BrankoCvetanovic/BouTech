@@ -8,8 +8,8 @@ import {
   useSearchParams,
   useNavigation,
 } from "react-router-dom";
-import Item from "../components/Item";
-import { Slider, CircularProgress } from "@mui/material";
+import ItemsContainer from "../components/ItemsContainer";
+import { Slider } from "@mui/material";
 import { useState } from "react";
 import Sort from "../components/Sort";
 import { loadedData } from "../util/types";
@@ -74,20 +74,7 @@ export default function ITPage() {
         </div>
       </div>
 
-      <ul className="item-container">
-        {navigation.state === "loading" && (
-          <div className="pending">
-            <CircularProgress size={50} />
-          </div>
-        )}
-        {navigation.state !== "loading" &&
-          data &&
-          data.items.map((item) => (
-            <li key={item._id}>
-              <Item img={item.image} price={item.price} name={item.name} />
-            </li>
-          ))}
-      </ul>
+      <ItemsContainer navigation={navigation.state} items={data.items} />
     </div>
   );
 }

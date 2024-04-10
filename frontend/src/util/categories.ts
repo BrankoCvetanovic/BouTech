@@ -12,6 +12,12 @@ import sonyIcon from "../assets/sony.jpg";
 import samsungPhoneIcon from "../assets/samsung-phone.jpg";
 import appleIcon from "../assets/apple-phone.jpg";
 import xiaomiIcon from "../assets/xiaomi-phone.jpg";
+import vacuumPng from "../assets/vacuum.png";
+import tvPng from "../assets/tv.png";
+import phonePng from "../assets/phone.png";
+import laptopPng from "../assets/laptop.png";
+import WMPng from "../assets/wm.png";
+import fridgePng from "../assets/fridge.png";
 
 export const appliances = [
   { name: "Fridges", img: fridgeIcon, id: "1", category: "fridge" },
@@ -44,4 +50,27 @@ export const phones = [
   { name: "Samsung", img: samsungPhoneIcon, id: "12", category: "samsung" },
   { name: "Apple", img: appleIcon, id: "13", category: "apple" },
   { name: "Xiaomi", img: xiaomiIcon, id: "14", category: "xiaomi" },
+];
+export const homeCategories = [
+  { name: "Mobile Phones", img: phonePng, url: "/phones", id: 22 },
+  { name: "Laptops", img: laptopPng, url: "/it?category=laptop", id: 23 },
+  { name: "TVs", img: tvPng, url: "/tvs", id: 24 },
+  {
+    name: "Fridges",
+    img: fridgePng,
+    url: "/appliances?category=fridge",
+    id: 25,
+  },
+  {
+    name: "Washing Machines",
+    img: WMPng,
+    url: "/appliances?category=washing-machine",
+    id: 26,
+  },
+  {
+    name: "Vacuum Cleaners",
+    img: vacuumPng,
+    url: "/appliances?category=vacuum-cleaner",
+    id: 27,
+  },
 ];

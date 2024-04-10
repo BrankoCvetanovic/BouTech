@@ -1,4 +1,4 @@
-interface LoaderItem {
+export interface LoaderItem {
   _id: string;
   category: string;
   createdAt: string;

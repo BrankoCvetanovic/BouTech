@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/Home";
+import HomePage, { loader as homeLoader } from "./pages/Home";
 import RootLayout from "./pages/Root";
 import AppliancesPage, { loader as applianceLoader } from "./pages/Appliances";
 import ITPage, { loader as itLoader } from "./pages/It";
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
+      { path: "/", element: <HomePage />, loader: homeLoader },
       {
         path: "/appliances",
         element: <AppliancesPage />,

@@ -14,6 +14,7 @@ const applianceRouter = require("./routes/appliances");
 const itRouter = require("./routes/it");
 const phoneRouter = require("./routes/phones");
 const tvRouter = require("./routes/tvs");
+const recommendedRouter = require("./routes/recommended");
 
 const notFoundMiddleware = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handler");
@@ -26,6 +27,7 @@ app.use("/appliances", applianceRouter);
 app.use("/it", itRouter);
 app.use("/phones", phoneRouter);
 app.use("/tvs", tvRouter);
+app.use("/recommended", recommendedRouter);
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

@@ -12,42 +12,84 @@
     display: flex;
     overflow: hidden;
     justify-content: center;
+    .slider {
+      width: 75vw;
+      height: 300px;
+      text-align: center;
+      position: relative;
+      display: flex;
+  
+    }
+    .img {
+      margin-bottom: 1rem;
+      object-fit: cover;
+      width: 100%;
+      max-width: 620px;
+    }
+  
+    article {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition:all 0.3s linear;;
+    }
+    article.activeSlide {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    article.lastSlide {
+      transform: translateX(-100%);
+    }
+    article.nextSlide {
+      transform: translateX(100%);
+    }
   }
-   
-  .slider {
-    width: 75vw;
-    height: 300px;
-    text-align: center;
-    position: relative;
-    display: flex;
+  .categories{
+    padding-top:30px ;
+    display:flex;
+    justify-content: space-evenly;
+    gap:40px;
+    align-items: center;
+    overflow-x: scroll
+    ;
+    overflow-y: hidden;
 
-  }
-  .img {
-    margin-bottom: 1rem;
-    object-fit: cover;
-    width: 100%;
-    max-width: 620px;
+    
+    a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgb(110, 109, 109);
+      font-size: 0.7rem;
+      text-align: center;
+      &:hover img{
+        scale: 1.1;
+      }
+    }
+    .container{
+      transform: rotate(45deg);
+      border-radius: 5px;
+      background: white;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img{
+      transform: rotate(-45deg);
+      transition: ease-in-out 0.12s;
+      width: 45px;
+    }
+    .name{
+      z-index: 1;
+    }
   }
 
-  article {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition:all 0.3s linear;;
-  }
-  article.activeSlide {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  article.lastSlide {
-    transform: translateX(-100%);
-  }
-  article.nextSlide {
-    transform: translateX(100%);
-  }
+
 }
 
 @media (min-width: 950px) {
@@ -58,10 +100,11 @@
 @media (max-width: 750px) {
  .home-page{
   padding: 1rem;
+  .slider-container{
   .slider{
     height: 40vw;
     width: 90vw;
   }
  }
-
+ }
 }
