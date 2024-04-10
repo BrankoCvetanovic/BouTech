@@ -12,7 +12,6 @@ import HomeCategories from "../components/HomeCategories";
 
 export default function HomePage() {
   const data = useLoaderData() as loadedData;
-  console.log(data);
   const navigation = useNavigation();
   return (
     <div className="home-page">

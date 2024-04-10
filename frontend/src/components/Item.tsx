@@ -1,15 +1,26 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
-const Item: FC<{ img: string; name: string; price: number }> = ({
-  img,
-  price,
-  name,
-}) => {
+const Item: FC<{
+  img: string;
+  name: string;
+  price: number;
+  category: string;
+  id: string;
+}> = ({ img, price, name, category, id }) => {
   const discountToken = price > 500 ? 0.2 : 0.15;
   const prevPrice = Math.round(price + price * discountToken);
   const discount = prevPrice - price;
+
+  let urlCategory = "/appliances";
+  if (category === "samsung-tv" || category === "sony" || category === "lg")
+    urlCategory = "/tvs";
+  if (category === "laptop" || category === "desktop") urlCategory = "/it";
+  if (category === "samsung" || category === "apple" || category === "xiaomi")
+    urlCategory = "/phones";
+
   return (
-    <div className="item">
+    <Link to={`${urlCategory}/${id}`} className="item">
       <img src={`http://localhost:3000/${img}`} alt="" />
       <div className="info">
         <div className="name">{name}</div>
@@ -19,7 +30,7 @@ const Item: FC<{ img: string; name: string; price: number }> = ({
         <div className="prev-price">{prevPrice},99 USD</div>
         <div className="price">{price},99 USD</div>
       </div>
-    </div>
+    </Link>
   );
 };
 

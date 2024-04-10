@@ -25,6 +25,10 @@ const ItemSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
+  discount: {
+    type: Number,
+    required: [true, "Please provide item category"],
+  },
 });
 
 const Appliance = mongoose.model("appliance", ItemSchema);

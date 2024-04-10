@@ -256,6 +256,30 @@ a {
     width: 90vw;
   }
 }
+.item-page {
+  background: rgb(229, 226, 226);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  grid-template-rows: auto auto;
+}
+.item-page .img-container {
+  background: white;
+  border: 1px solid rgb(204, 202, 202);
+  border-radius: 7px;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+.item-page .img-container img {
+  width: 90%;
+}
+.item-page .info {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+}
+
 :root {
   font-family: "roboto", sans-serif; /* Safari/Chrome, other WebKit */ /* Firefox, other Gecko */
   box-sizing: border-box;

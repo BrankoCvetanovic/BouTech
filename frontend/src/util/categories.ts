@@ -43,7 +43,7 @@ export const it = [
 ];
 export const TV = [
   { name: "LG", img: lgIcon, id: "9", category: "lg" },
-  { name: "Samsung", img: samsungIcon, id: "10", category: "samsung" },
+  { name: "Samsung", img: samsungIcon, id: "10", category: "samsung-tv" },
   { name: "Sony", img: sonyIcon, id: "11", category: "sony" },
 ];
 export const phones = [
