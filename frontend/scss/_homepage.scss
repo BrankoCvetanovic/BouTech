@@ -11,24 +11,34 @@
     padding: 1rem 8%;
     display: flex;
     overflow: hidden;
-    justify-content: center;
     .slider {
       width: 75vw;
       height: 300px;
       text-align: center;
       position: relative;
       display: flex;
-  
+      align-items: center;
+      .progress-bar{
+        width: 100%;
+        max-width: 620px;
+        color: rgb(223, 148, 10);
+      }
+      
     }
     .img {
-      margin-bottom: 1rem;
+      opacity: 1;
       object-fit: cover;
       width: 100%;
       max-width: 620px;
     }
+
   
     article {
       position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       top: 0;
       left: 0;
       width: 100%;
