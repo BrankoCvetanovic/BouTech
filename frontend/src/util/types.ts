@@ -7,6 +7,7 @@ export interface LoaderItem {
   name: string;
   price: number;
   __v: number;
+  discount: number;
 }
 
 export interface loadedData {

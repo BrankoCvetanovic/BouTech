@@ -19,6 +19,7 @@ const ItemsContainer: FC<{ navigation: string; items: LoaderItem[] }> = ({
         items.map((item) => (
           <li key={item._id}>
             <Item
+              discount={item.discount}
               id={item._id}
               category={item.category}
               img={item.image}

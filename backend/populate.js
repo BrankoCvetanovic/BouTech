@@ -6,6 +6,7 @@ const appliancesArray = [
     description:
       "A superb combined refrigerator with a total capacity of 264 liters, energy efficiency class F, freezing capacity within 24 hours of 3 kg, reversible door, and up to 15 hours of operation during power outages.",
     category: "fridge",
+    discount: 20,
   },
   {
     name: "FrostMaster 9000 Fridge",
@@ -14,6 +15,7 @@ const appliancesArray = [
     description:
       "A superb combined refrigerator with a total capacity of 364 liters, energy efficiency class S, freezing capacity within 24 hours of 3 kg, reversible door, and up to 20 hours of operation during power outages.",
     category: "fridge",
+    discount: 15,
   },
   {
     name: "EcoWash Washing Machine",
@@ -22,6 +24,7 @@ const appliancesArray = [
     description:
       "A phenomenal machine with adjustable spin speed up to 1100 revolutions, equipped with a load weight sensor, offering an option for delayed start up to 24 hours, capable of washing up to 7 kg of laundry with 5 quick and standard programs, and featuring machine self-diagnosis via NFC network and Simply-Fi application.",
     category: "washing-machine",
+    discount: 10,
   },
   {
     name: "FlameMaster Stove",
@@ -30,6 +33,7 @@ const appliancesArray = [
     description:
       "Energy class: A, Electric stove with glass-ceramic hob, Oven capacity: 55 liters, Dimensions: (WxHxD) 50x85x60 cm, Electric grill with 7 cooking functions.",
     category: "stove",
+    discount: 20,
   },
   {
     name: "SteamPro Iron",
@@ -38,6 +42,7 @@ const appliancesArray = [
     description:
       "A powerful 2600 W steam iron with a steam boost of up to 95 g/min, continuous steam release of 30 g/min, featuring a 350 ml water tank with a large filling opening, equipped with an anti-drip system and limescale protection, and a self-cleaning function activated by the press of a button.",
     category: "iron",
+    discount: 20,
   },
   {
     name: "PowerSuck Vacuum Cleaner",
@@ -46,6 +51,7 @@ const appliancesArray = [
     description:
       "A powerful vacuum cleaner with a cloth bag, boasting 1600 W of power, equipped with a metal telescopic tube and a brush with two attachments for corners and furniture, featuring a five-stage filtration system to prevent dust re-entry, an indicator for container fullness, and a 360° rotating hose.",
     category: "vacuum-cleaner",
+    discount: 18,
   },
   {
     name: "ToastWave Toaster Oven",
@@ -54,6 +60,7 @@ const appliancesArray = [
     description:
       "A toaster with heating and defrosting functions, featuring a crumb tray for easy cleaning, illuminated button for clearer and easier control, automatic bread ejection, and 6 levels of browning.",
     category: "toaster",
+    discount: 18,
   },
   {
     name: "CoolBreeze Fridge",
@@ -70,6 +77,7 @@ const appliancesArray = [
     description:
       "A 7 kg washing machine with the convenience of adding clothes during the washing cycle, a steam function at the end of the selected program significantly reducing wrinkles, odors, and bacteria, and featuring a safety lock.",
     category: "washing-machine",
+    discount: 20,
   },
   {
     name: "Chef'sChoice Stove",
@@ -78,6 +86,7 @@ const appliancesArray = [
     description:
       "An excellent white electric stove equipped with a self-cleaning system - AquaClean, and featuring a conventional oven.",
     category: "stove",
+    discount: 15,
   },
   {
     name: "SteamEase Iron",
@@ -86,6 +95,7 @@ const appliancesArray = [
     description:
       "An exceptional steam iron with a power of 2800 W, adjustable temperature settings and a steam boost of 100 g/min, equipped with a 350 ml water tank capacity, a ceramic plate that perfectly irons all types of materials, and protection against leaks and limescale.",
     category: "iron",
+    discount: 15,
   },
   {
     name: "TurboSweep Vacuum Cleaner",
@@ -94,6 +104,7 @@ const appliancesArray = [
     description:
       "An extremely powerful stick vacuum cleaner with a detachable container that quickly converts into a handheld device. The battery is detachable and easily rechargeable anywhere, providing up to 60 minutes of runtime. It features a motorized turbo brush suitable for all types of floors and LED lighting to enhance cleaning.",
     category: "vacuum-cleaner",
+    discount: 20,
   },
   {
     name: "CrunchMaster Toaster",
@@ -102,6 +113,7 @@ const appliancesArray = [
     description:
       "Power: 700 W, Temperature indicator, Cable length: 1 m, Weight: 1.2 kg.",
     category: "toaster",
+    discount: 20,
   },
   {
     name: "ArcticFrost Fridge",
@@ -110,6 +122,7 @@ const appliancesArray = [
     description:
       "A NoFrost refrigerator with a bottom freezer in elegant black. It features the VitaFresh XXL freshness system to preserve food freshness, LED lighting to evenly illuminate the refrigerator interior, and Perfect Fit design enabling placement of the refrigerator against walls.",
     category: "fridge",
+    discount: 10,
   },
   {
     name: "SpeedyWash Washing Machine",
@@ -126,6 +139,7 @@ const appliancesArray = [
     description:
       "Energy class: A, Electric stove with glass-ceramic hob, Oven capacity: 72 liters, Dimensions: 60 cm x 85 cm x 60 cm, 3D cooking, Defrosting function.",
     category: "stove",
+    discount: 20,
   },
   {
     name: "SmoothPress Iron",
@@ -133,6 +147,7 @@ const appliancesArray = [
     price: 39,
     description: "Iron with ceramic plate for smooth ironing without sticking.",
     category: "iron",
+    discount: 18,
   },
   {
     name: "DustMaster Vacuum Cleaner",
@@ -141,6 +156,7 @@ const appliancesArray = [
     description:
       "Excellent 750 W vacuum cleaner with a 1.5-liter dust container, efficient dual filtration, exceptional suction attachments, and great maneuverability with three wheels.",
     category: "vacuum-cleaner",
+    discount: 15,
   },
   {
     name: "EliteToast Toaster",
@@ -148,6 +164,7 @@ const appliancesArray = [
     price: 99,
     description: "Luxury toaster with wide slots for different types of bread.",
     category: "toaster",
+    discount: 20,
   },
   {
     name: "PolarFrost Fridge",
@@ -156,6 +173,7 @@ const appliancesArray = [
     description:
       "Practical and spacious side-by-side refrigerator with a total capacity of 439 liters, equipped with NoFrost technology to prevent ice buildup, operates exceptionally quietly with a noise level of 39 dB, and has an annual energy consumption of 286 kWh.",
     category: "fridge",
+    discount: 20,
   },
   {
     name: "SilentWash Washing Machine",
@@ -164,6 +182,7 @@ const appliancesArray = [
     description:
       "Combined washing and drying machine with steam function, convenient add-on feature for adding laundry during the cycle, equipped with 15 efficient programs, with a washing capacity of 9 kg and a drying capacity of 6 kg.",
     category: "washing-machine",
+    discount: 15,
   },
 ];
 const itArray = [
@@ -174,6 +193,7 @@ const itArray = [
     description:
       "Slim, stylish, and powerful, the UltraBook Slim is designed for those who demand performance without compromise. Its sleek design houses cutting-edge components for seamless multitasking and immersive entertainment.",
     category: "laptop",
+    discount: 20,
   },
   {
     name: "Workstation Pro",
@@ -182,6 +202,7 @@ const itArray = [
     description:
       "The Workstation Pro is engineered for professionals who require maximum performance and reliability. With its powerful processor, professional-grade graphics, and expansive storage options, it's the ultimate tool for demanding workloads.",
     category: "desktop",
+    discount: 20,
   },
   {
     name: "ZenBook Infinity",
@@ -190,6 +211,7 @@ const itArray = [
     description:
       "Experience the pinnacle of innovation with the ZenBook Infinity. Its stunning design, ultra-thin profile, and breathtaking display redefine elegance and performance in a laptop.",
     category: "laptop",
+    discount: 10,
   },
   {
     name: "Gaming Beast",
@@ -198,6 +220,7 @@ const itArray = [
     description:
       "Dominate the competition with the Gaming Beast. Equipped with a high-refresh-rate display, powerful graphics, and advanced cooling system, it delivers unparalleled gaming performance.",
     category: "laptop",
+    discount: 15,
   },
   {
     name: "OfficeMaster Pro",
@@ -206,6 +229,7 @@ const itArray = [
     description:
       "Boost your productivity with the OfficeMaster Pro desktop. Featuring a spacious display, ergonomic design, and powerful performance, it's the perfect workstation for professionals.",
     category: "desktop",
+    discount: 20,
   },
   {
     name: "FlexBook Air",
@@ -222,6 +246,7 @@ const itArray = [
     description:
       "The PowerTower Pro is the epitome of desktop power and performance. With its high-speed processor, advanced graphics, and expansive storage, it's built to handle the most demanding tasks with ease.",
     category: "desktop",
+    discount: 15,
   },
   {
     name: "InfinityBook Pro",
@@ -230,6 +255,7 @@ const itArray = [
     description:
       "Unleash your creativity with the InfinityBook Pro. Its stunning display, powerful processor, and long-lasting battery life make it the perfect choice for professionals on the go.",
     category: "laptop",
+    discount: 18,
   },
   {
     name: "EliteBook X",
@@ -238,6 +264,7 @@ const itArray = [
     description:
       "Elevate your productivity with the EliteBook X. Its premium design, lightning-fast performance, and advanced security features ensure you can work with confidence, wherever you are.",
     category: "laptop",
+    discount: 18,
   },
   {
     name: "ProBook Flex",
@@ -246,6 +273,7 @@ const itArray = [
     description:
       "The ProBook Flex combines versatility and performance in a sleek package. With its convertible design, powerful processor, and long battery life, it's perfect for work and play.",
     category: "laptop",
+    discount: 10,
   },
   {
     name: "Ultimate Workstation",
@@ -254,6 +282,7 @@ const itArray = [
     description:
       "Experience unparalleled power with the Ultimate Workstation desktop. Featuring top-of-the-line components, professional-grade graphics, and extensive connectivity options, it's the ultimate tool for professionals.",
     category: "desktop",
+    discount: 20,
   },
   {
     name: "EssentialBook Pro",
@@ -262,6 +291,7 @@ const itArray = [
     description:
       "Get essential performance with the EssentialBook Pro. Its reliable design, long battery life, and affordable price make it the perfect choice for everyday computing tasks.",
     category: "laptop",
+    discount: 20,
   },
   {
     name: "SlimBook Pro",
@@ -270,6 +300,7 @@ const itArray = [
     description:
       "Experience sleek performance with the SlimBook Pro. Its slim design, powerful processor, and vibrant display make it the perfect choice for work and entertainment on the go.",
     category: "laptop",
+    discount: 18,
   },
   {
     name: "Gaming Titan",
@@ -286,6 +317,7 @@ const itArray = [
     description:
       "Get swift performance with the SwiftBook Pro. Its fast processor, responsive keyboard, and long battery life ensure you can stay productive all day long.",
     category: "laptop",
+    discount: 18,
   },
   {
     name: "SwiftBook Air",
@@ -294,6 +326,7 @@ const itArray = [
     description:
       "Stay productive on the go with the SwiftBook Air. Its lightweight design, long battery life, and responsive keyboard make it the perfect companion for work and travel.",
     category: "laptop",
+    discount: 15,
   },
 ];
 const phoneArray = [
@@ -304,6 +337,7 @@ const phoneArray = [
     description:
       "Samsung's latest flagship phone with cutting-edge features and stunning design.",
     category: "samsung",
+    discount: 10,
   },
   {
     name: "Apple iPhone 13",
@@ -312,6 +346,7 @@ const phoneArray = [
     description:
       "The newest iPhone featuring the powerful A15 Bionic chip and advanced camera system.",
     category: "apple",
+    discount: 10,
   },
   {
     name: "Xiaomi Mi 12",
@@ -320,6 +355,7 @@ const phoneArray = [
     description:
       "Xiaomi's latest flagship phone with a powerful Snapdragon processor and stunning display.",
     category: "xiaomi",
+    discount: 10,
   },
   {
     name: "Samsung Galaxy Note 20",
@@ -328,6 +364,7 @@ const phoneArray = [
     description:
       "Samsung's premium phablet with an immersive display and versatile S Pen functionality.",
     category: "samsung",
+    discount: 10,
   },
   {
     name: "Apple iPhone 13 Pro",
@@ -336,6 +373,7 @@ const phoneArray = [
     description:
       "The ultimate iPhone for professionals with ProMotion display and Pro camera system.",
     category: "apple",
+    discount: 10,
   },
   {
     name: "Xiaomi Mi 11",
@@ -344,6 +382,7 @@ const phoneArray = [
     description:
       "Xiaomi's flagship phone offering top-tier performance and elegant design.",
     category: "xiaomi",
+    discount: 10,
   },
   {
     name: "Samsung Galaxy Z Flip 3",
@@ -352,6 +391,7 @@ const phoneArray = [
     description:
       "Samsung's foldable phone with a compact design and innovative Flex mode.",
     category: "samsung",
+    discount: 10,
   },
   {
     name: "Apple iPhone SE",
@@ -360,6 +400,7 @@ const phoneArray = [
     description:
       "The compact iPhone with the powerful A15 Bionic chip and advanced camera features.",
     category: "apple",
+    discount: 10,
   },
   {
     name: "Xiaomi Redmi Note 11 Pro",
@@ -368,6 +409,7 @@ const phoneArray = [
     description:
       "Xiaomi's mid-range phone with a high-refresh-rate display and impressive camera capabilities.",
     category: "xiaomi",
+    discount: 10,
   },
   {
     name: "Samsung Galaxy A52",
@@ -376,6 +418,7 @@ const phoneArray = [
     description:
       "Samsung's mid-range phone with a versatile camera system and long-lasting battery.",
     category: "samsung",
+    discount: 10,
   },
   {
     name: "Apple iPhone 12 Mini",
@@ -384,6 +427,7 @@ const phoneArray = [
     description:
       "The compact iPhone with a Super Retina XDR display and 5G connectivity.",
     category: "apple",
+    discount: 10,
   },
   {
     name: "Xiaomi Redmi Note 10",
@@ -392,6 +436,7 @@ const phoneArray = [
     description:
       "Xiaomi's budget-friendly phone with a high-resolution display and powerful battery.",
     category: "xiaomi",
+    discount: 12,
   },
   {
     name: "Samsung Galaxy A32",
@@ -400,6 +445,7 @@ const phoneArray = [
     description:
       "Samsung's affordable phone with a large Infinity-U display and quad-camera setup.",
     category: "samsung",
+    discount: 10,
   },
   {
     name: "Apple iPhone 12 Pro Max",
@@ -408,6 +454,7 @@ const phoneArray = [
     description:
       "The largest iPhone with a Pro camera system and LiDAR scanner for advanced AR experiences.",
     category: "apple",
+    discount: 10,
   },
   {
     name: "Xiaomi Redmi note 13",
@@ -416,6 +463,7 @@ const phoneArray = [
     description:
       "Xiaomi's entry-level phone with a large display and AI quad-camera setup.",
     category: "xiaomi",
+    discount: 10,
   },
   {
     name: "Samsung Galaxy S20 FE",
@@ -424,6 +472,7 @@ const phoneArray = [
     description:
       "Samsung's flagship experience at an affordable price, featuring a Super AMOLED display and versatile camera system.",
     category: "samsung",
+    discount: 5,
   },
 ];
 const tvArray = [
@@ -434,6 +483,7 @@ const tvArray = [
     description:
       "Experience stunning picture quality with the LG OLED C1. Featuring OLED technology, Dolby Vision IQ, and AI-enhanced image processing, it delivers unparalleled visuals.",
     category: "lg",
+    discount: 15,
   },
   {
     name: "Samsung QLED QN90A",
@@ -441,7 +491,8 @@ const tvArray = [
     price: 2499,
     description:
       "Immerse yourself in lifelike colors and incredible detail with the Samsung QLED QN90A. With Quantum HDR, Object Tracking Sound, and a sleek design, it's a true centerpiece for any room.",
-    category: "samsung",
+    category: "samsung-tv",
+    discount: 15,
   },
   {
     name: "Sony Bravia XR A90J",
@@ -450,6 +501,7 @@ const tvArray = [
     description:
       "Experience cinematic brilliance with the Sony Bravia XR A90J. Featuring Cognitive Processor XR, XR Triluminos Pro, and Acoustic Surface Audio+, it's the ultimate entertainment experience.",
     category: "sony",
+    discount: 15,
   },
   {
     name: "LG NanoCell 90",
@@ -458,6 +510,7 @@ const tvArray = [
     description:
       "Enjoy vibrant colors and sharp detail with the LG NanoCell 90. With NanoCell technology, Dolby Atmos, and a sleek design, it's perfect for both movies and gaming.",
     category: "lg",
+    discount: 18,
   },
   {
     name: "Samsung Neo QLED QN85A",
@@ -465,7 +518,8 @@ const tvArray = [
     price: 1999,
     description:
       "Elevate your viewing experience with the Samsung Neo QLED QN85A. Featuring Quantum Matrix Technology, Object Tracking Sound, and Adaptive Picture, it delivers stunning visuals and immersive audio.",
-    category: "samsung",
+    category: "samsung-tv",
+    discount: 18,
   },
   {
     name: "Sony Bravia X90J",
@@ -474,6 +528,7 @@ const tvArray = [
     description:
       "Enjoy breathtaking clarity and detail with the Sony Bravia X90J. With Full Array LED, XR Triluminos Pro, and XR Motion Clarity, it delivers an immersive viewing experience.",
     category: "sony",
+    discount: 15,
   },
   {
     name: "LG OLED GX",
@@ -482,6 +537,7 @@ const tvArray = [
     description:
       "Transform your living space with the LG OLED GX. With Gallery Design, Dolby Vision IQ, and Alpha 9 Gen 3 AI Processor, it's a work of art that delivers exceptional picture quality.",
     category: "lg",
+    discount: 15,
   },
   {
     name: "Samsung The Frame",
@@ -489,7 +545,8 @@ const tvArray = [
     price: 1799,
     description:
       "Elevate your space with the Samsung The Frame. When not in use, it transforms into a stunning piece of art, and when turned on, it delivers vibrant colors and lifelike detail.",
-    category: "samsung",
+    category: "samsung-tv",
+    discount: 15,
   },
   {
     name: "Sony Bravia X80J",
@@ -498,6 +555,7 @@ const tvArray = [
     description:
       "Enjoy immersive entertainment with the Sony Bravia X80J. With 4K HDR, Triluminos Display, and Google TV, it offers stunning visuals and easy access to your favorite content.",
     category: "sony",
+    discount: 15,
   },
   {
     name: "LG 4K UHD UN7070",
@@ -506,6 +564,7 @@ const tvArray = [
     description:
       "Experience lifelike visuals with the LG 4K UHD UN7070. With 4K Active HDR, webOS, and a slim design, it's the perfect addition to any entertainment setup.",
     category: "lg",
+    discount: 10,
   },
   {
     name: "Samsung Crystal UHD AU8000",
@@ -513,7 +572,8 @@ const tvArray = [
     price: 999,
     description:
       "Immerse yourself in stunning clarity with the Samsung Crystal UHD AU8000. With Crystal Processor 4K, HDR, and Motion Xcelerator, it delivers an incredible viewing experience.",
-    category: "samsung",
+    category: "samsung-tv",
+    discount: 10,
   },
 ];
 module.exports = { appliancesArray, itArray, phoneArray, tvArray };

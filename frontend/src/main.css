@@ -110,6 +110,7 @@ a {
   grid-column: 1/-1;
 }
 .item-container .item {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -142,11 +143,28 @@ a {
   margin-bottom: 2px;
   text-decoration: line-through;
 }
+.item-container .item .control {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
 .item-container .item .price {
   font-size: 0.9rem;
+  color: black;
 }
 .item-container .item:hover {
   border: 1px solid rgb(190, 187, 187);
+}
+.item-container .item .control {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 0.6rem;
+}
+.item-container .item .control button {
+  background: rgb(255, 217, 0);
+  color: black;
 }
 
 @media screen and (max-width: 800px) {
@@ -270,7 +288,9 @@ a {
   padding: 2rem;
   display: grid;
   grid-template-columns: 5fr 6fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 180px 180px;
+  min-height: 100vh;
+  gap: 30px;
 }
 .item-page .img-container {
   background: white;
@@ -279,16 +299,58 @@ a {
   grid-row: 1/-1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .item-page .img-container img {
-  width: 90%;
+  width: 300px;
 }
 .item-page .info {
   display: flex;
   flex-direction: column;
   padding: 1.4rem;
 }
+.item-page .info .name {
+  color: rgb(105, 104, 104);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.item-page .info .discount {
+  font-size: 0.7rem;
+  color: rgb(243, 29, 29);
+  margin-bottom: 2px;
+}
+.item-page .info .prev-price {
+  font-size: 0.7rem;
+  color: rgb(105, 104, 104);
+  margin-bottom: 2px;
+  text-decoration: line-through;
+}
+.item-page .info .price {
+  font-size: 1rem;
+}
+.item-page .info button {
+  margin-top: 5px;
+  background: rgb(255, 217, 0);
+  align-self: flex-end;
+}
+.item-page .description {
+  font-size: 0.8rem;
+  padding: 1rem;
+  border-top: 1px solid rgb(204, 202, 202);
+}
 
+@media screen and (min-width: 1200px) {
+  .item-page {
+    padding: 1rem 15%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .item-page {
+    gap: 5px;
+    padding: 1rem 7px;
+    grid-template-columns: auto;
+  }
+}
 :root {
   font-family: "roboto", sans-serif; /* Safari/Chrome, other WebKit */ /* Firefox, other Gecko */
   box-sizing: border-box;

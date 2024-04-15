@@ -23,6 +23,9 @@ app.use(cors());
 app.use(express.static("./images"));
 app.use(express.json());
 
+const { Tv, Phone, It, Appliance } = require("./models/Item");
+const { phoneArray, appliancesArray, tvArray, itArray } = require("./populate");
+
 app.use("/appliances", applianceRouter);
 app.use("/it", itRouter);
 app.use("/phones", phoneRouter);

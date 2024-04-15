@@ -27,7 +27,7 @@ const ItemSchema = new mongoose.Schema({
   },
   discount: {
     type: Number,
-    required: [true, "Please provide item category"],
+    default: 0,
   },
 });
 
