@@ -6,6 +6,7 @@ import ITPage, { loader as itLoader } from "./pages/It";
 import TVPage, { loader as tvLoader } from "./pages/TV";
 import PhonesPage, { loader as phoneLoader } from "./pages/Phones";
 import ItemPage, { loader as itemLoader } from "./pages/Item";
+import CartContextProvider from "./components/CartContext";
 
 import ErrorPage from "./pages/Error";
 const router = createBrowserRouter([
@@ -60,7 +61,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <CartContextProvider>
+      <RouterProvider router={router} />
+    </CartContextProvider>
+  );
 }
 
 export default App;

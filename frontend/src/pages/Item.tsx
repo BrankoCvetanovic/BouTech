@@ -3,13 +3,18 @@ import { LoaderItem } from "../util/types";
 import axios, { AxiosError } from "axios";
 import { Button } from "@mui/material";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { useContext } from "react";
+import { CartContext } from "../components/CartContext";
 export default function ItemPage() {
   const data = useLoaderData() as LoaderItem;
 
-  let realPrice = data.price;
+  const cartContext = useContext(CartContext);
+
+  let realPrice = data.price + 0.99;
 
   if (data.discount > 0) {
-    realPrice = Math.round(data.price - (data.price / 100) * data.discount);
+    realPrice =
+      Math.round(data.price - (data.price / 100) * data.discount) + 0.99;
   }
 
   return (
@@ -23,13 +28,17 @@ export default function ItemPage() {
           <>
             <div className="discount">
               -{data.discount}% Saved:
-              <strong>{data.price - realPrice} USD</strong>
+              <strong>{data.price + 0.99 - realPrice} USD</strong>
             </div>
-            <div className="prev-price">{data.price},99 USD</div>
+            <div className="prev-price">{data.price + 0.99} USD</div>
           </>
         )}
-        <div className="price">{realPrice},99 USD</div>
+        <div className="price">{realPrice} USD</div>
         <Button
+          onClick={(event) => {
+            event.preventDefault();
+            cartContext?.addItemToCart(data.name, realPrice, data._id);
+          }}
           variant="contained"
           color="inherit"
           startIcon={<ShoppingCartOutlinedIcon />}

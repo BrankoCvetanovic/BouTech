@@ -1,7 +1,8 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { CartContext } from "./CartContext";
 
 const Item: FC<{
   img: string;
@@ -11,10 +12,12 @@ const Item: FC<{
   id: string;
   discount: number;
 }> = ({ img, price, name, category, id, discount }) => {
-  let realPrice = price;
+  const cartContext = useContext(CartContext);
+
+  let realPrice = price + 0.99;
 
   if (discount > 0) {
-    realPrice = Math.round(price - (price / 100) * discount);
+    realPrice = Math.round(price - (price / 100) * discount) + 0.99;
   }
 
   let urlCategory = "/appliances";
@@ -32,15 +35,24 @@ const Item: FC<{
         {discount > 0 && (
           <>
             <div className="discount">
-              -{discount}% Saved: <strong>{price - realPrice} USD</strong>
+              -{discount}% Saved:{" "}
+              <strong>{Math.round(price - realPrice)} USD</strong>
             </div>
-            <div className="prev-price">{price},99 USD</div>
+            <div className="prev-price">{price + 0.99} USD</div>
           </>
         )}
-        <div className="price">{realPrice},99 USD</div>
+        <div className="price">{realPrice} USD</div>
       </div>
       <div className="control">
-        <Button variant="contained" color="inherit" size="small">
+        <Button
+          onClick={(event) => {
+            event.preventDefault();
+            cartContext?.addItemToCart(name, realPrice, id);
+          }}
+          variant="contained"
+          color="inherit"
+          size="small"
+        >
           <ShoppingCartOutlinedIcon />
         </Button>
       </div>
