@@ -17,12 +17,12 @@
   }
   
   .modal-actions .text-button {
-    color: #1d1a16;
+    color: black;
   }
   
   .modal-actions .text-button:hover,
   .modal-actions .text-button:active {
-    color: #312c1d;
+    color: black;
   }
   
   .cart-total {
@@ -31,7 +31,7 @@
     margin: 2rem 0;
     font-size: 1.15rem;
     font-weight: bold;
-    color: #46443c;
+    color: black;
   }
 }
 .cart-item {
@@ -58,8 +58,8 @@
     height: 1.5rem;
     border-radius: 50%;
     border: none;
-    background-color: #312c1d;
-    color: #ffc404;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,11 +67,9 @@
   
   .cart-item-actions button:hover,
   .cart-item-actions button:active {
-    background-color: #1d1a16;
-    color: #ffab04;
+    background-color: rgb(39, 38, 38);
   }
   .modal {
-    background-color: #e4ddd4;
     border-radius: 6px;
     border: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
@@ -90,7 +88,7 @@
     cursor: pointer;
     background-color: #ffc404;
     border: 1px solid #ffc404;
-    color: #1f1a09;
+    color: black;
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
   }
@@ -99,7 +97,7 @@
   .button:active {
     background-color: #ffab04;
     border-color: #ffab04;
-    color: #1f1a09;
+    color: black;
   }
   
   .text-button {

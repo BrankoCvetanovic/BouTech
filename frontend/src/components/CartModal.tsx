@@ -2,6 +2,7 @@ import { useRef, useEffect, useContext } from "react";
 import { createPortal } from "react-dom";
 import Cart from "./Cart";
 import { CartContext } from "./CartContext";
+import { Link } from "react-router-dom";
 
 const CartModal = () => {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -36,9 +37,9 @@ const CartModal = () => {
         <form method="dialog" className="modal-actions">
           <button className="text-button">Close</button>
           {
-            <button type="button" className="button">
+            <Link to="/checkout" onClick={handleCloseCart} className="button">
               Go to Checkout
-            </button>
+            </Link>
           }
         </form>
       </div>

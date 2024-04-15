@@ -7,6 +7,7 @@ import TVPage, { loader as tvLoader } from "./pages/TV";
 import PhonesPage, { loader as phoneLoader } from "./pages/Phones";
 import ItemPage, { loader as itemLoader } from "./pages/Item";
 import CartContextProvider from "./components/CartContext";
+import Checkout from "./form/Checkout";
 
 import ErrorPage from "./pages/Error";
 const router = createBrowserRouter([
@@ -56,6 +57,7 @@ const router = createBrowserRouter([
         element: <ItemPage />,
         loader: itemLoader,
       },
+      { path: "/checkout", element: <Checkout /> },
     ],
   },
 ]);
