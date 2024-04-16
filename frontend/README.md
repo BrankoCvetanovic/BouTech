@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# BouTech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to BouTech This application provides a platform for users to browse and purchase a variety of tech products. With multiple pages dedicated to appliances, IT equipment, TVs, and phones, users can easily find and select the items they desire.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multiple Pages**: Navigate through different categories such as appliances, IT, TVs, and phones.
+- **Sorting Options**: Sort items based on various criteria such as price, popularity, or brand.
+- **Full Stack**: Built using React for the front end, Express for the backend, and MongoDB for the database.
+- **User Interaction**: Users can add items they like to their cart and proceed to checkout to place their order into the database.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Frontend**:
+  - React
+  - Material UI
+  - React Router
+- **Backend**:
+  - Express
+  - Mongoose
+- **Other**:
+  - Axios (for making HTTP requests)
