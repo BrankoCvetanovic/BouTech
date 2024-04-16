@@ -23,12 +23,15 @@ async function getAppliances(req, res) {
 
 async function getOneAppliance(req, res) {
   const { params } = req;
-
-  const item = await Appliance.findOne({ _id: params.id });
-  if (!item) {
+  try {
+    const item = await Appliance.findOne({ _id: params.id });
+    if (!item) {
+      throw new CustomAPIError(`There is no item with id: ${params.id}  `, 404);
+    }
+    res.status(StatusCodes.OK).json(item);
+  } catch (error) {
     throw new CustomAPIError(`There is no item with id: ${params.id}  `, 404);
   }
-  res.status(StatusCodes.OK).json(item);
 }
 
 async function createAppliance(req, res) {

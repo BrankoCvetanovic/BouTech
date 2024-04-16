@@ -23,12 +23,15 @@ async function getIt(req, res) {
 
 async function getOneIt(req, res) {
   const { params } = req;
-
-  const item = await It.findOne({ _id: params.id });
-  if (!item) {
+  try {
+    const item = await It.findOne({ _id: params.id });
+    if (!item) {
+      throw new CustomAPIError(`There is no item with id: ${params.id}  `, 404);
+    }
+    res.status(StatusCodes.OK).json(item);
+  } catch (error) {
     throw new CustomAPIError(`There is no item with id: ${params.id}  `, 404);
   }
-  res.status(StatusCodes.OK).json(item);
 }
 
 async function createIt(req, res) {

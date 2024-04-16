@@ -93,6 +93,7 @@ export default function PaymentForm() {
                   Card number
                 </FormLabel>
                 <OutlinedInput
+                  name="card-number"
                   id="card-number"
                   autoComplete="card-number"
                   placeholder="0000 0000 0000 0000"
@@ -106,6 +107,7 @@ export default function PaymentForm() {
                   CVV
                 </FormLabel>
                 <OutlinedInput
+                  name="cvv"
                   id="cvv"
                   autoComplete="CVV"
                   placeholder="123"
@@ -121,6 +123,7 @@ export default function PaymentForm() {
                   Name
                 </FormLabel>
                 <OutlinedInput
+                  name="card-name"
                   id="card-name"
                   autoComplete="card-name"
                   placeholder="John Smith"
@@ -132,6 +135,7 @@ export default function PaymentForm() {
                   Expiration date
                 </FormLabel>
                 <OutlinedInput
+                  name="card-expiration"
                   id="card-expiration"
                   autoComplete="card-expiration"
                   placeholder="MM/YY"

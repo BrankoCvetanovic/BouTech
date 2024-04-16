@@ -14,26 +14,26 @@ export default function AddressForm() {
   return (
     <Grid container spacing={3}>
       <FormGrid item xs={12} md={6}>
-        <FormLabel htmlFor="first-name" required>
+        <FormLabel htmlFor="name" required>
           Full name
         </FormLabel>
         <OutlinedInput
-          id="first-name"
-          name="first-name"
+          id="name"
+          name="name"
           type="name"
-          placeholder="John Snow"
-          autoComplete="first name"
+          placeholder="Clark Kent"
+          autoComplete="name"
           required
         />
       </FormGrid>
       <FormGrid item xs={12}>
-        <FormLabel htmlFor="address1" required>
+        <FormLabel htmlFor="address" required>
           Address
         </FormLabel>
         <OutlinedInput
-          id="address1"
-          name="address1"
-          type="address1"
+          id="address"
+          name="address"
+          type="address"
           placeholder="Street name and number"
           autoComplete="shipping address-line1"
           required

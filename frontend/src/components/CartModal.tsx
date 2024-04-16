@@ -2,18 +2,25 @@ import { useRef, useEffect, useContext } from "react";
 import { createPortal } from "react-dom";
 import Cart from "./Cart";
 import { CartContext } from "./CartContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CartModal = () => {
   const dialog = useRef<HTMLDialogElement>(null);
 
   const cartContext = useContext(CartContext);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     dialog.current?.showModal();
   }, []);
 
   function handleCloseCart() {
+    cartContext?.closeModal();
+  }
+
+  function handleCheckout() {
+    navigate("/checkout");
     cartContext?.closeModal();
   }
 
@@ -37,9 +44,14 @@ const CartModal = () => {
         <form method="dialog" className="modal-actions">
           <button className="text-button">Close</button>
           {
-            <Link to="/checkout" onClick={handleCloseCart} className="button">
+            <button
+              onClick={handleCheckout}
+              disabled={cartContext?.userItems.length === 0}
+              type="button"
+              className="button"
+            >
               Go to Checkout
-            </Link>
+            </button>
           }
         </form>
       </div>

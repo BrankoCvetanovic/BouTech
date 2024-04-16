@@ -24,12 +24,15 @@ async function getPhones(req, res) {
 
 async function getOnePhone(req, res) {
   const { params } = req;
-
-  const item = await Phone.findOne({ _id: params.id });
-  if (!item) {
+  try {
+    const item = await Phone.findOne({ _id: params.id });
+    if (!item) {
+      throw new CustomAPIError(`There is no item with id: ${params.id}  `, 404);
+    }
+    res.status(StatusCodes.OK).json(item);
+  } catch (error) {
     throw new CustomAPIError(`There is no item with id: ${params.id}  `, 404);
   }
-  res.status(StatusCodes.OK).json(item);
 }
 
 async function createPhone(req, res) {

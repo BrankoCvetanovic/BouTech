@@ -9,6 +9,7 @@ interface CartItem {
 interface CartContextType {
   userItems: CartItem[];
   addItemToCart: (name: string, price: number, itemIndex: string) => void;
+  resetCart: () => void;
   addAmount: (name: string) => void;
   removeAmount: (name: string) => void;
   isOpen: boolean;
@@ -39,6 +40,10 @@ const CartContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
       return newItems;
     });
+  }
+
+  function resetCart() {
+    setUserItems([]);
   }
 
   function addAmount(name: string) {
@@ -73,6 +78,7 @@ const CartContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
       value={{
         userItems,
         addItemToCart,
+        resetCart,
         addAmount,
         removeAmount,
         isOpen,

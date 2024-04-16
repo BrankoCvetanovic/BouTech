@@ -20,6 +20,11 @@ export default function Info({ totalPrice }: InfoProps) {
       <Typography variant="h4" gutterBottom>
         {totalPrice}
       </Typography>
+      {cartContext?.userItems.length === 0 && (
+        <Typography variant="subtitle1" color="text.secondary">
+          Your cart is empty, cannot place order with empty cart
+        </Typography>
+      )}
       <List disablePadding>
         {cartContext?.userItems.map((product) => (
           <ListItem key={product.name} sx={{ py: 1, px: 0 }}>

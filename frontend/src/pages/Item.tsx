@@ -58,6 +58,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     const response = await axios.get(`http://localhost:3000${url.pathname}`);
     return response.data;
   } catch (err) {
+    console.log(err);
     const errors = err as Error | AxiosError;
     throw json({ message: errors.message }, { status: 500 });
   }
