@@ -20,7 +20,11 @@ export default function ItemPage() {
   return (
     <div className="item-page">
       <div className="img-container">
-        <img id="img" src={`http://localhost:3000/${data.image}`} alt="" />
+        <img
+          id="img"
+          src={`http://localhost:3000/static/${data.image}`}
+          alt=""
+        />
       </div>
       <div className="info">
         <div className="name">{data.name}</div>

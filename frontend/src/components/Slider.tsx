@@ -5,7 +5,7 @@ import adIcon3 from "../assets/1920x660_sm@2x.jpg";
 import LinearProgress from "@mui/material/LinearProgress";
 
 export default function Slider() {
-  const [images, setImages] = useState([adIcon1, adIcon2, adIcon3]);
+  const images = useState([adIcon1, adIcon2, adIcon3])[0];
   const [index, setIndex] = useState(0);
   const [progress, setProgress] = useState(0);
 

@@ -9,7 +9,7 @@ interface Category_arr {
 }
 
 const Categories: FC<{ categories: Category_arr[] }> = ({ categories }) => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const setSearchParams = useSearchParams()[1];
 
   function sortByCategory(category: string) {
     setSearchParams(`?${new URLSearchParams({ category: category })}`);

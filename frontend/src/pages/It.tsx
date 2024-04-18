@@ -23,7 +23,7 @@ export default function ITPage() {
 
   const navigation = useNavigation();
 
-  const handleChange = (event: Event, newValue: number | number[]) => {
+  const handleChange = (_event: Event, newValue: number | number[]) => {
     setValue(newValue as number[]);
   };
   const handleChangeCommited = () => {

@@ -1,11 +1,6 @@
 import Slider from "../components/Slider";
 import axios, { AxiosError } from "axios";
-import {
-  useLoaderData,
-  json,
-  LoaderFunctionArgs,
-  useNavigation,
-} from "react-router-dom";
+import { useLoaderData, json, useNavigation } from "react-router-dom";
 import { loadedData } from "../util/types";
 import ItemsContainer from "../components/ItemsContainer";
 import HomeCategories from "../components/HomeCategories";
@@ -22,7 +17,7 @@ export default function HomePage() {
     </div>
   );
 }
-export const loader = async ({ request }: LoaderFunctionArgs) => {
+export const loader = async () => {
   try {
     const response = await axios.get("http://localhost:3000/recommended");
     return response.data;

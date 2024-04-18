@@ -21,7 +21,7 @@ const notFoundMiddleware = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handler");
 
 app.use(cors());
-app.use(express.static("./images"));
+app.use("/static", express.static(path.join(__dirname, "images")));
 app.use(express.json());
 
 const { Tv, Phone, It, Appliance } = require("./models/Item");

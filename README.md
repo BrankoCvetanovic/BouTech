@@ -1,6 +1,6 @@
 # BouTech
 
-Welcome to BouTech This application provides a platform for users to browse and purchase a variety of tech products. With multiple pages dedicated to appliances, IT equipment, TVs, and phones, users can easily find and select the items they desire.
+Welcome to BouTech! This application provides a platform for users to browse and purchase a variety of tech products. With multiple pages dedicated to appliances, IT equipment, TVs, and phones, users can easily find and select the items they desire. They can then proceed to place their orders directly within the application, making shopping convenient and hassle-free.
 
 ## Features
 
@@ -20,3 +20,7 @@ Welcome to BouTech This application provides a platform for users to browse and 
   - Mongoose
 - **Other**:
   - Axios (for making HTTP requests)
+
+## Link
+
+https://main--boutechsrb.netlify.app/

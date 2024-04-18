@@ -2,7 +2,7 @@ import { useRef, useEffect, useContext } from "react";
 import { createPortal } from "react-dom";
 import Cart from "./Cart";
 import { CartContext } from "./CartContext";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CartModal = () => {
   const dialog = useRef<HTMLDialogElement>(null);

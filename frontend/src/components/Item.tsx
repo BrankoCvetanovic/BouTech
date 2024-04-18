@@ -29,7 +29,7 @@ const Item: FC<{
 
   return (
     <Link to={`${urlCategory}/${id}`} className="item">
-      <img src={`http://localhost:3000/${img}`} alt="" />
+      <img src={`http://localhost:3000/static/${img}`} alt="" />
       <div className="info">
         <div className="name">{name}</div>
         {discount > 0 && (
