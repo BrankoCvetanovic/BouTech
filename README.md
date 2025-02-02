@@ -23,4 +23,4 @@ Welcome to BouTech! This application provides a platform for users to browse and
 
 ## Link
 
-https://main--boutechsrb.netlify.app/
+https://boutechsrb.netlify.app/
